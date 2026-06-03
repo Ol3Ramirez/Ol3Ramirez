@@ -9,7 +9,7 @@
 <div align="center">
 
 [![Email](https://img.shields.io/badge/ol3rm2%40gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:ol3rm2@gmail.com)&nbsp;
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/olegario-ramirez)&nbsp;
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/oleramirez)&nbsp;
 [![GitHub](https://img.shields.io/badge/Ol3Ramirez-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/Ol3Ramirez)&nbsp;
 ![Oaxaca MX](https://img.shields.io/badge/📍%20Oaxaca%2C%20México-green?style=flat-square)
 
@@ -117,7 +117,7 @@ WebSocket relay de baja latencia, overlays en vivo para streaming, scripting con
 
 > 💼 **Disponible para colaboraciones** en sistemas full-stack, automatización o tiempo real.
 > 
-> 📧 [ol3rm2@gmail.com](mailto:ol3rm2@gmail.com) · [LinkedIn](https://linkedin.com/in/olegario-ramirez) · [GitHub](https://github.com/Ol3Ramirez)
+> 📧 [ol3rm2@gmail.com](mailto:ol3rm2@gmail.com) · [LinkedIn](https://linkedin.com/in/oleramirez) · [GitHub](https://github.com/Ol3Ramirez)
 
 <br/>
 
