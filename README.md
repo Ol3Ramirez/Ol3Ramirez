@@ -91,7 +91,7 @@ WebSocket relay de baja latencia, overlays en vivo para streaming, scripting con
 
 ## 🔐 Explorando: IA + Ciberseguridad
 
-> *"La primera campaña de ciberespionaje orquestada por IA fue detectada en noviembre 2025. Actores estatales automatizaron el 80-90% del ataque usando LLMs. Eso cambió mi perspectiva."*
+> *"En noviembre 2025, actores estatales usaron Claude Code —la misma herramienta que uso para programar— para orquestar el primer ciberataque 80% automatizado por IA de la historia. Si la IA puede atacar, también puede defender. Quiero aprender los dos lados."*
 
 Me apasiona la intersección entre **Inteligencia Artificial y Ciberseguridad**. El incidente de noviembre 2025 — donde actores estatales utilizaron herramientas de IA como vector de ataque orquestado contra decenas de organizaciones — me motivó a estudiar este campo activamente.
 
