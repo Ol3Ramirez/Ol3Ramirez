@@ -91,7 +91,7 @@ WebSocket relay de baja latencia, overlays en vivo para streaming, scripting con
 
 ## 🔐 Explorando: IA + Ciberseguridad
 
-> *"En noviembre 2025, actores estatales usaron Claude Code —la misma herramienta que uso para programar— para orquestar el primer ciberataque 80% automatizado por IA de la historia. Si la IA puede atacar, también puede defender. Quiero aprender los dos lados."*
+> *"Llevo años construyendo sistemas. Un día me pregunté cómo los atacaría alguien. Esa pregunta no me ha soltado."*
 
 Me apasiona la intersección entre **Inteligencia Artificial y Ciberseguridad**. El incidente de noviembre 2025 — donde actores estatales utilizaron herramientas de IA como vector de ataque orquestado contra decenas de organizaciones — me motivó a estudiar este campo activamente.
 
