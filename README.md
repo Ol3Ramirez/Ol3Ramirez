@@ -1,7 +1,7 @@
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12&height=210&section=header&text=Olegario%20Ram%C3%ADrez&fontSize=56&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Full%20Stack%20Developer%20%C2%B7%20TypeScript%20%C2%B7%20React%20%C2%B7%20Node.js&descAlignY=62&descColor=rgba(255,255,255,0.85)&descSize=20"/>
 
 <h3 align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=2800&pause=1000&color=58A6FF&center=true&vCenter=true&random=false&width=620&lines=Construyo+sistemas+enterprise+con+TypeScript+%F0%9F%9A%80;Full+Stack%3A+React+%2B+Node.js+%2B+PostgreSQL+%F0%9F%97%84%EF%B8%8F;APIs+seguras+%2B+SPAs+de+alto+rendimiento+%F0%9F%94%90;Automatizaci%C3%B3n+%2C+IoT+y+tiempo+real+%E2%9A%A1;Oaxaca%2C+M%C3%A9xico+%F0%9F%87%B2%F0%9F%87%BD" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=2800&pause=1000&color=58A6FF&center=true&vCenter=true&random=false&width=680&lines=Full+Stack+TypeScript+%7C+React+%2B+Node.js+%F0%9F%9A%80;Sistemas+empresariales+de+misi%C3%B3n+cr%C3%ADtica+%F0%9F%97%84%EF%B8%8F;APIs+seguras+%2B+SPAs+de+alto+rendimiento+%F0%9F%94%90;Explorando+IA+%2B+Ciberseguridad+%F0%9F%94%90%F0%9F%A4%96;Automatizaci%C3%B3n+%2C+IoT+y+tiempo+real+%E2%9A%A1;Oaxaca%2C+M%C3%A9xico+%F0%9F%87%B2%F0%9F%87%BD+%7C+Open+to+Remote" alt="Typing SVG" />
 </h3>
 
 <br/>
@@ -21,12 +21,12 @@
 
 Desarrollador **Full Stack** con enfoque en sistemas empresariales de misión crítica. Diseño y construyo aplicaciones completas — desde la base de datos hasta la interfaz — con TypeScript, React y Node.js, priorizando seguridad, rendimiento y mantenibilidad.
 
-- 🏢 Experiencia construyendo **sistemas de gestión operativa** para industrias de alta demanda  
-- 📊 Generación dinámica de **reportes en PDF y Excel** (servidor + cliente)  
-- ☁️ Integración con **AWS S3**, APIs externas y servicios cloud en producción  
-- 🗺️ **Mapas interactivos** y geo-tracking con Leaflet para visualización operativa  
-- ⚡ Sistemas **en tiempo real** con WebSockets y automatización con Python/Node.js  
-- 🛰️ Redes inalámbricas **WISP**, Mikrotik e IoT  
+- 🏢 Experiencia construyendo **sistemas de gestión operativa** para industrias de alta demanda
+- 📊 Generación dinámica de **reportes en PDF y Excel** (servidor + cliente)
+- ☁️ Integración con **AWS S3**, APIs externas y servicios cloud en producción
+- 🗺️ **Mapas interactivos** y geo-tracking con Leaflet para visualización operativa
+- ⚡ Sistemas **en tiempo real** con WebSockets y automatización con Python/Node.js
+- 🛰️ Redes inalámbricas **WISP**, Mikrotik e IoT
 
 ---
 
@@ -89,6 +89,27 @@ WebSocket relay de baja latencia, overlays en vivo para streaming, scripting con
 
 ---
 
+## 🔐 Explorando: IA + Ciberseguridad
+
+> *"La primera campaña de ciberespionaje orquestada por IA fue detectada en noviembre 2025. Actores estatales automatizaron el 80-90% del ataque usando LLMs. Eso cambió mi perspectiva."*
+
+Me apasiona la intersección entre **Inteligencia Artificial y Ciberseguridad**. El incidente de noviembre 2025 — donde actores estatales utilizaron herramientas de IA como vector de ataque orquestado contra decenas de organizaciones — me motivó a estudiar este campo activamente.
+
+**Actualmente aprendiendo:**
+
+![LLM Security](https://img.shields.io/badge/LLM_Security-FF6B6B?style=flat-square&logo=anthropic&logoColor=white)
+![Prompt Injection](https://img.shields.io/badge/Prompt_Injection-orange?style=flat-square)
+![Red Teaming AI](https://img.shields.io/badge/Red_Teaming_AI-red?style=flat-square)
+![OWASP LLM Top10](https://img.shields.io/badge/OWASP_LLM_Top10-blue?style=flat-square)
+![Threat Modeling](https://img.shields.io/badge/Threat_Modeling_AI-purple?style=flat-square)
+
+**Recursos que sigo:**
+- 📄 [OWASP Top 10 for LLM Applications](https://github.com/OWASP/www-project-top-10-for-large-language-model-applications)
+- 🛠️ [Promptfoo — Red teaming de LLMs](https://github.com/promptfoo/promptfoo)
+- 🔬 [STRIDE-GPT — Threat modeling automático](https://github.com/mrwadams/stride-gpt)
+
+---
+
 ## 📈 GitHub Stats
 
 <div align="center">
@@ -111,12 +132,13 @@ WebSocket relay de baja latencia, overlays en vivo para streaming, scripting con
 | 📦 Estado & Datos | TanStack Query, Redux Toolkit, React Hook Form + Zod |
 | ☁️ Cloud | AWS S3, presigned URLs, procesamiento de imágenes con Sharp |
 | ⚡ Real-time | WebSockets, node-cron, overlays en vivo para transmisión deportiva |
+| 🤖 Aprendiendo | LLM Security, Prompt Injection, Red Teaming AI, OWASP LLM Top10 |
 | 🛰️ IoT / Redes | WISP, Mikrotik, configuración RF, redes inalámbricas |
 
 ---
 
 > 💼 **Disponible para colaboraciones** en sistemas full-stack, automatización o tiempo real.
-> 
+>
 > 📧 [ol3rm2@gmail.com](mailto:ol3rm2@gmail.com) · [LinkedIn](https://linkedin.com/in/oleramirez) · [GitHub](https://github.com/Ol3Ramirez)
 
 <br/>
