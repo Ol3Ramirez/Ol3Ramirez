@@ -1,47 +1,67 @@
-# Olegario Ramírez · Ol3Ramirez
+# Olegario Ramírez &nbsp;·&nbsp; Ol3Ramirez
 
-**Full-Stack Developer** — SvelteKit · TypeScript · Python · Real-time Systems
+**Full-Stack Developer** — sistemas en tiempo real, automatización e IoT
+
+---
+
+> [!NOTE]
+> Especializado en conectar hardware con software: desde redes WISP hasta overlays en vivo para transmisiones deportivas.
 
 ---
 
 ## Stack
 
-| Área | Tecnologías |
-|------|------------|
-| Frontend | SvelteKit, TypeScript, Tailwind CSS, HTML5/CSS3 |
-| Backend | Node.js, Python, WebSockets, REST APIs |
-| Base de datos | PostgreSQL, Supabase |
-| Tools | Git, Claude Code, PM2, GitHub Actions |
-| Especialidad | Sistemas en tiempo real, automatización, IoT |
+![SvelteKit](https://img.shields.io/badge/SvelteKit-FF3E00?style=for-the-badge&logo=svelte&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![WebSockets](https://img.shields.io/badge/WebSockets-010101?style=for-the-badge&logo=socketdotio&logoColor=white)
 
 ---
 
 ## Proyectos
 
-### 🎬 OBS Overlays — Transmisión deportiva en vivo
-Sistema de overlays en tiempo real para transmisiones de fútbol vía WebSocket.
-`Python` `WebSocket` `HTML5` `OBS`
-→ [OBS-overlays-futbol](https://github.com/Ol3Ramirez/OBS-overlays-futbol)
+### 🎬 OBS Overlays — Transmisión de fútbol en vivo
+Sistema de overlays HTML/CSS/JS con relay WebSocket en Python para transmisiones deportivas en OBS.
 
-### 📡 WIFI-TLX — Plataforma WISP
-Sistema full-stack para gestión de clientes y servicios de Internet inalámbrico.
-`SvelteKit` `TypeScript` `Supabase` `Tailwind CSS`
+> [!TIP]
+> Latencia < 50ms entre eventos del marcador y el overlay renderizado en pantalla.
+
+→ **[Ver proyecto](https://github.com/Ol3Ramirez/OBS-overlays-futbol)**
+
+---
+
+### 📡 WIFI-TLX — Plataforma de gestión WISP
+SaaS full-stack para administración de clientes, planes y servicios de Internet inalámbrico.
+`SvelteKit` · `TypeScript` · `Supabase` · `Tailwind CSS` · `PostgreSQL`
+
+---
 
 ### ⚙️ dotfiles-claude
-Configuración profesional de Claude Code: hooks de seguridad, MCPs, skills y reglas.
-`Claude Code` `Node.js` `PowerShell` `Automation`
-→ [dotfiles-claude](https://github.com/Ol3Ramirez/dotfiles-claude)
+Entorno profesional de Claude Code: hooks de seguridad, MCPs, skills personalizados y reglas de estilo.
+
+→ **[Ver proyecto](https://github.com/Ol3Ramirez/dotfiles-claude)**
 
 ---
 
 ## Especialización
 
-- **Real-time** — WebSocket, streaming en vivo, overlay rendering
-- **Automatización** — Python scripting, PowerShell, CI/CD
-- **Full-stack** — SvelteKit end-to-end con Supabase como backend
-- **IoT / Redes** — WISP, Mikrotik, redes inalámbricas
-- **AI-powered dev** — Claude Code, automatización de workflows con LLMs
+| Área | Detalle |
+|------|---------|
+| Real-time | WebSocket, streaming en vivo, overlay rendering |
+| Full-stack | SvelteKit + Supabase, end-to-end TypeScript |
+| Automatización | Python scripting, PowerShell, Claude Code |
+| IoT / Redes | WISP, Mikrotik, configuración de RF |
+| AI-powered dev | LLMs, Claude API, automatización con agentes |
 
 ---
 
-📍 Oaxaca, México · ol3rm2@gmail.com
+> [!IMPORTANT]
+> Disponible para colaboraciones en proyectos de sistemas en tiempo real, automatización o desarrollo full-stack.
+
+---
+
+📍 Oaxaca, México &nbsp;·&nbsp; ol3rm2@gmail.com
