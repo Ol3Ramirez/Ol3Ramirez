@@ -1,69 +1,124 @@
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12&height=210&section=header&text=Olegario%20Ram%C3%ADrez&fontSize=56&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Full%20Stack%20Developer%20%C2%B7%20TypeScript%20%C2%B7%20React%20%C2%B7%20Node.js&descAlignY=62&descColor=rgba(255,255,255,0.85)&descSize=20"/>
+
+<h3 align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=2800&pause=1000&color=58A6FF&center=true&vCenter=true&random=false&width=620&lines=Construyo+sistemas+enterprise+con+TypeScript+%F0%9F%9A%80;Full+Stack%3A+React+%2B+Node.js+%2B+PostgreSQL+%F0%9F%97%84%EF%B8%8F;APIs+seguras+%2B+SPAs+de+alto+rendimiento+%F0%9F%94%90;Automatizaci%C3%B3n+%2C+IoT+y+tiempo+real+%E2%9A%A1;Oaxaca%2C+M%C3%A9xico+%F0%9F%87%B2%F0%9F%87%BD" alt="Typing SVG" />
+</h3>
+
+<br/>
+
 <div align="center">
 
-# Olegario Ramírez
-
-**Full-Stack Developer** · Real-time Systems · Automation · IoT
-
-📍 Oaxaca, México &nbsp;·&nbsp; ol3rm2@gmail.com
-
-[![GitHub](https://img.shields.io/badge/GitHub-Ol3Ramirez-181717?style=flat-square&logo=github)](https://github.com/Ol3Ramirez)
+[![Email](https://img.shields.io/badge/ol3rm2%40gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:ol3rm2@gmail.com)&nbsp;
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/olegario-ramirez)&nbsp;
+[![GitHub](https://img.shields.io/badge/Ol3Ramirez-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/Ol3Ramirez)&nbsp;
+![Oaxaca MX](https://img.shields.io/badge/📍%20Oaxaca%2C%20México-green?style=flat-square)
 
 </div>
 
 ---
 
-> [!NOTE]
-> Construyo sistemas que conectan hardware con software en tiempo real — desde redes WISP hasta overlays en vivo para transmisiones deportivas.
+## 🧠 Sobre mí
+
+Desarrollador **Full Stack** con enfoque en sistemas empresariales de misión crítica. Diseño y construyo aplicaciones completas — desde la base de datos hasta la interfaz — con TypeScript, React y Node.js, priorizando seguridad, rendimiento y mantenibilidad.
+
+- 🏢 Experiencia construyendo **sistemas de gestión operativa** para industrias de alta demanda  
+- 📊 Generación dinámica de **reportes en PDF y Excel** (servidor + cliente)  
+- ☁️ Integración con **AWS S3**, APIs externas y servicios cloud en producción  
+- 🗺️ **Mapas interactivos** y geo-tracking con Leaflet para visualización operativa  
+- ⚡ Sistemas **en tiempo real** con WebSockets y automatización con Python/Node.js  
+- 🛰️ Redes inalámbricas **WISP**, Mikrotik e IoT  
 
 ---
 
-## Tecnologías
+## 🛠️ Stack Tecnológico
+
+<div align="center">
+
+**Lenguajes**
+
+[![Lenguajes](https://skillicons.dev/icons?i=ts,js,python,html,css)](https://skillicons.dev)
 
 **Frontend**
 
-![SvelteKit](https://img.shields.io/badge/SvelteKit-FF3E00?style=for-the-badge&logo=svelte&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+[![Frontend](https://skillicons.dev/icons?i=react,svelte,vite,tailwind,redux)](https://skillicons.dev)
 
-**Backend & Data**
+**Backend & Base de datos**
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
-![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
+[![Backend](https://skillicons.dev/icons?i=nodejs,express,postgres,supabase)](https://skillicons.dev)
 
-**Real-time & DevOps**
+**Cloud, DevOps & Herramientas**
 
-![WebSockets](https://img.shields.io/badge/WebSockets-010101?style=for-the-badge&logo=socketdotio&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
-![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=for-the-badge&logo=powershell&logoColor=white)
-
----
-
-## GitHub Stats
-
-<div align="center">
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Ol3Ramirez&show_icons=true&theme=tokyonight&hide_border=true&count_private=true)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Ol3Ramirez&layout=compact&theme=tokyonight&hide_border=true)
+[![DevOps](https://skillicons.dev/icons?i=aws,docker,git,github,githubactions,vscode)](https://skillicons.dev)
 
 </div>
 
 ---
 
-## Especialización
+## 🚀 Lo que construyo
 
-| Área | Experiencia |
-|------|------------|
-| 🔴 Real-time | WebSocket relay, streaming en vivo, latencia < 50ms |
-| 🟦 Full-stack | SvelteKit + Supabase, end-to-end TypeScript |
-| 🟡 Automatización | Python scripting, PowerShell, Claude Code / LLMs |
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### 🔐 Seguridad & Autenticación
+JWT stateless con cookies HttpOnly, RBAC por roles, auditoría de cambios, soft deletes, rate limiting y headers de seguridad con Helmet.
+
+</td>
+<td width="50%" valign="top">
+
+### 📊 Reportes & Analytics
+Dashboards con Chart.js y Recharts. Exportación dinámica a PDF (pdf-lib, jsPDF) y Excel (ExcelJS) tanto desde servidor como desde cliente.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### ☁️ Integración Cloud
+Almacenamiento con AWS S3, presigned URLs, procesamiento de imágenes, integración con APIs externas y notificaciones automáticas vía cron.
+
+</td>
+<td width="50%" valign="top">
+
+### ⚡ Tiempo Real & Automatización
+WebSocket relay de baja latencia, overlays en vivo para streaming, scripting con Python/PowerShell, redes WISP y configuración Mikrotik.
+
+</td>
+</tr>
+</table>
+
+---
+
+## 📈 GitHub Stats
+
+<div align="center">
+  <img height="175" src="https://github-readme-stats.vercel.app/api?username=Ol3Ramirez&show_icons=true&theme=github_dark&hide_border=true&count_private=true&include_all_commits=true&rank_icon=github" />
+  <img height="175" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ol3Ramirez&layout=compact&theme=github_dark&hide_border=true&langs_count=7&card_width=290" />
+</div>
+
+<div align="center">
+  <img src="https://streak-stats.demolab.com/?user=Ol3Ramirez&theme=github-dark-blue&hide_border=true&date_format=j%20M%5B%20Y%5D" />
+</div>
+
+---
+
+## 🔍 Especialización
+
+| Área | Detalle |
+|------|---------|
+| 🏗️ Full-Stack TypeScript | React 19 + Vite · Express 5 · TypeORM · PostgreSQL — end-to-end tipado |
+| 🔐 Seguridad | JWT + RBAC, Zod, Helmet, rate limiting, validación en boundary |
+| 📦 Estado & Datos | TanStack Query, Redux Toolkit, React Hook Form + Zod |
+| ☁️ Cloud | AWS S3, presigned URLs, procesamiento de imágenes con Sharp |
+| ⚡ Real-time | WebSockets, node-cron, overlays en vivo para transmisión deportiva |
 | 🛰️ IoT / Redes | WISP, Mikrotik, configuración RF, redes inalámbricas |
 
 ---
 
-> [!IMPORTANT]
-> Disponible para colaboraciones en sistemas en tiempo real, automatización o desarrollo full-stack.
+> 💼 **Disponible para colaboraciones** en sistemas full-stack, automatización o tiempo real.
+> 
+> 📧 [ol3rm2@gmail.com](mailto:ol3rm2@gmail.com) · [LinkedIn](https://linkedin.com/in/olegario-ramirez) · [GitHub](https://github.com/Ol3Ramirez)
+
+<br/>
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12&height=130&section=footer"/>
