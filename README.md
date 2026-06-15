@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=venom&color=0:7c3aed,40:c026d3,70:db2777,100:f59e0b&height=280&section=header&text=Olegario%20Ramírez&fontSize=62&fontColor=ffffff&fontAlignY=42&desc=Full%20Stack%20Developer%20%7C%20TypeScript%20·%20React%20·%20Node.js%20·%20AI%20Automation&descAlignY=62&descColor=fde68a&animation=twinkling" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:7c3aed,40:c026d3,70:db2777,100:f59e0b&height=260&section=header&text=Olegario%20Ram%C3%ADrez&fontSize=58&fontColor=ffffff&fontAlignY=40&desc=Full%20Stack%20Developer%20%7C%20TypeScript%20%C2%B7%20React%20%C2%B7%20Node.js%20%C2%B7%20AI%20Automation&descAlignY=62&descColor=fde68a&animation=fadeIn" width="100%"/>
 
 <br/>
 
@@ -111,16 +111,6 @@ Full Stack Developer building **production-critical systems** that combine robus
 <br/><br/>
 
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=Ol3Ramirez&bg_color=141321&color=f472b6&line=7c3aed&point=f59e0b&area=true&area_color=c026d3&hide_border=true" width="96%" />
-
-</div>
-
----
-
-## Trophies
-
-<div align="center">
-
-[![trophy](https://github-profile-trophy.vercel.app/?username=Ol3Ramirez&theme=radical&no-frame=true&no-bg=true&margin-w=8&column=7)](https://github.com/ryo-ma/github-profile-trophy)
 
 </div>
 
