@@ -57,9 +57,14 @@ Full Stack Developer building **production-critical systems** that combine robus
 **AI & Automation**
 
 [![My Skills](https://skillicons.dev/icons?i=python,playwright&theme=dark)](https://skillicons.dev)
-&nbsp;
-![Claude](https://img.shields.io/badge/Anthropic_Claude-D97706?style=for-the-badge&logo=anthropic&logoColor=white)
-![MikroTik](https://img.shields.io/badge/MikroTik-293239?style=for-the-badge&logo=mikrotik&logoColor=white)
+&nbsp;&nbsp;
+![Claude](https://img.shields.io/badge/Anthropic_Claude-D97706?style=flat-square&logo=anthropic&logoColor=white&labelColor=1a1a2e)
+
+**Networking & IoT**
+
+![MikroTik](https://img.shields.io/badge/MikroTik_RouterOS-293239?style=for-the-badge&logo=mikrotik&logoColor=white)
+![WebSockets](https://img.shields.io/badge/WebSockets-010101?style=for-the-badge&logo=socket.io&logoColor=white)
+![IoT](https://img.shields.io/badge/IoT_Automation-0066CC?style=for-the-badge&logo=raspberry-pi&logoColor=white)
 
 </div>
 
@@ -104,7 +109,7 @@ Full Stack Developer building **production-critical systems** that combine robus
 
 <div align="center">
 
-<img height="175" src="https://github-readme-stats.vercel.app/api?username=Ol3Ramirez&show_icons=true&theme=radical&hide_border=true&count_private=true&include_all_commits=true&rank_icon=github" />
+<img height="175" src="https://github-readme-stats.vercel.app/api?username=Ol3Ramirez&show_icons=true&theme=radical&hide_border=true&count_private=true&include_all_commits=true&rank_icon=github&hide=contribs" />
 &nbsp;&nbsp;
 <img height="175" src="https://streak-stats.demolab.com?user=Ol3Ramirez&theme=radical&hide_border=true&date_format=M%20j%5B%2C%20Y%5D" />
 
