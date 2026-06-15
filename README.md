@@ -1,67 +1,36 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=200&section=header&text=Olegario%20Ramírez&fontSize=52&fontColor=ffffff&fontAlignY=38&desc=Full%20Stack%20Developer%20%7C%20AI%20Systems%20Builder&descAlignY=62&descColor=a78bfa&animation=fadeIn" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=venom&color=0:7c3aed,40:c026d3,70:db2777,100:f59e0b&height=280&section=header&text=Olegario%20Ramírez&fontSize=62&fontColor=ffffff&fontAlignY=42&desc=Full%20Stack%20Developer%20%7C%20TypeScript%20·%20React%20·%20Node.js%20·%20AI%20Automation&descAlignY=62&descColor=fde68a&animation=twinkling" width="100%"/>
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=18&pause=1200&color=A78BFA&center=true&vCenter=true&width=700&lines=TypeScript+%2B+React+%2B+Node.js;Multi-Agent+Systems+%2B+MCP+Protocol;WISP+Networks+%2B+IoT+Automation;LLM+Security+%2B+AI+Red+Teaming;Building+from+Oaxaca%2C+México)](https://git.io/typing-svg)
+<br/>
 
-</div>
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=17&pause=1000&color=F472B6&center=true&vCenter=true&width=750&lines=Building+enterprise-critical+full-stack+systems;TypeScript+%7C+React+%7C+SvelteKit+%7C+Node.js;Real-time+infrastructure+%2B+WebSockets;AI+Automation+%2B+LLM+Security+%2B+Red+Teaming;WISP+Networks+%2B+MikroTik+RouterOS;Oaxaca%2C+México+—+Available+remote)](https://git.io/typing-svg)
 
----
+<br/>
 
-## About Me
-
-Full Stack Developer building **production-grade systems** that combine robust backend engineering with AI automation. I don't just use AI tools — I architect multi-agent systems from the ground up.
-
-- Based in **Oaxaca, México** · Available remote
-- Focused on **enterprise-critical systems**, real-time infrastructure, and AI pipelines
-- Running a private **WISP network** (MikroTik/RouterOS) and building its management tooling
-- Active learner in **LLM Security** and AI Red Teaming (OWASP LLM Top10, Prompt Injection, STRIDE-GPT)
-
-<div align="center">
-
-[![Email](https://img.shields.io/badge/ol3rm2@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ol3rm2@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/oleramirez)
-[![GitHub](https://img.shields.io/badge/Ol3Ramirez-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Ol3Ramirez)
+![Profile Views](https://komarev.com/ghpvc/?username=Ol3Ramirez&style=for-the-badge&color=7c3aed&label=PROFILE+VIEWS)
 
 </div>
 
 ---
 
-## Featured Project — OLE Agent Stack
+<img align="right" width="38%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ol3Ramirez&layout=compact&theme=radical&hide_border=true&langs_count=8&card_width=300" />
 
-> A production multi-agent AI system built from scratch. Not a wrapper around LangChain — a markdown-driven orchestration architecture with deterministic routing, MCP protocol integration, and executable evals.
+### About Me
 
-```
-User Input
-    │
-    ▼
- ROUTER  ──── decision tree A–R ──→  Claude Direct
-    │                               (single-agent, fast)
-    ├──────────────────────────────→  CHARLYBOT
-    │                                (12 MCP-powered COMBOs)
-    └──────────────────────────────→  RICKY
-                                     (orchestrator: fan-out → fan-in)
-                                          └─ CHARLYBOT COMBO × N (parallel workers)
-```
+Full Stack Developer building **production-critical systems** that combine robust backend engineering with AI automation, real-time infrastructure, and security-first design.
 
-**What makes it different:**
+- **Based in** Oaxaca, México — Available remote
+- **Focus:** Enterprise platforms · Real-time systems · AI pipelines
+- **Studying:** LLM Security · Prompt Injection · OWASP LLM Top10 · AI Red Teaming
+- **Running:** WISP network with MikroTik/RouterOS automation
+- **Principle:** *Ship software that actually runs in production.*
 
-| Aspect | Typical Agent Framework | OLE Agent Stack |
-|--------|------------------------|-----------------|
-| Routing | LLM decides at runtime | Deterministic tree (A–R nodes) |
-| Tools | Per-call tool selection | Pre-composed COMBO recipes |
-| Context | Unbounded (hits limits fast) | Managed via LETI checkpoints (~150K budget) |
-| Config | Python code | Version-controlled Markdown files |
-| Evaluation | Manual | Executable evals (routing, COMBO, RICKY) |
-| Resilience | Retry logic | Circuit Breaker (2 failures → OPEN → HALF-OPEN) |
+<br/>
 
-**12 specialized COMBOs** — each a recipe of MCP servers:
-
-`COMBO-01` Web scraping · `COMBO-02` Facebook metrics · `COMBO-03` Library docs (Context7) · `COMBO-04` SQLite/historical data · `COMBO-05` Windows diagnostics · `COMBO-06` GitHub search · `COMBO-07` Price comparison · `COMBO-08` Multi-source research · `COMBO-09` YouTube transcripts · `COMBO-10` Google Sheets sync · `COMBO-11` Image/PDF analysis · `COMBO-12` Stealth browser (anti-bot)
-
-**Academic foundations:** ReAct (Yao et al., ICLR 2023) · Reflexion (Shinn et al., NeurIPS 2023) · Tree of Thoughts (arXiv 2305.10601) · Toolformer (Schick et al., NeurIPS 2024) · LangGraph/Pregel · MCP Protocol (Anthropic 2024)
-
-**Stack:** Markdown-driven · Model Context Protocol · Claude Sonnet/Haiku/Opus · SQLite · Playwright · Node.js scripts
+[![Email](https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:ol3rm2@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/oleramirez)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/Ol3Ramirez)
 
 ---
 
@@ -69,43 +38,28 @@ User Input
 
 <div align="center">
 
-### Languages & Core
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
+**Languages & Runtimes**
 
-### Frontend
-![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
-![SvelteKit](https://img.shields.io/badge/SvelteKit-FF3E00?style=flat-square&logo=svelte&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
-![Redux](https://img.shields.io/badge/Redux-764ABC?style=flat-square&logo=redux&logoColor=white)
+[![My Skills](https://skillicons.dev/icons?i=ts,js,py,html,css,bash&theme=dark)](https://skillicons.dev)
 
-### Backend & Data
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
-![Express](https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white)
-![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)
-![Zod](https://img.shields.io/badge/Zod-3E67B1?style=flat-square&logo=zod&logoColor=white)
+**Frontend**
 
-### AI & Automation
-![Anthropic](https://img.shields.io/badge/Anthropic_Claude-D4A27F?style=flat-square&logo=anthropic&logoColor=black)
-![MCP Protocol](https://img.shields.io/badge/MCP_Protocol-8B5CF6?style=flat-square&logo=anthropic&logoColor=white)
-![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=flat-square&logo=playwright&logoColor=white)
-![LangGraph](https://img.shields.io/badge/LangGraph-FF6600?style=flat-square&logo=langchain&logoColor=white)
+[![My Skills](https://skillicons.dev/icons?i=react,svelte,tailwind,vite,redux&theme=dark)](https://skillicons.dev)
 
-### Cloud & DevOps
-![AWS](https://img.shields.io/badge/AWS_S3-FF9900?style=flat-square&logo=amazons3&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
+**Backend & Databases**
 
-### Networking & IoT
-![MikroTik](https://img.shields.io/badge/MikroTik-293239?style=flat-square&logo=mikrotik&logoColor=white)
-![RouterOS](https://img.shields.io/badge/RouterOS-293239?style=flat-square&logo=mikrotik&logoColor=white)
-![WebSockets](https://img.shields.io/badge/WebSockets-010101?style=flat-square&logo=socket.io&logoColor=white)
+[![My Skills](https://skillicons.dev/icons?i=nodejs,express,postgres,supabase,sqlite&theme=dark)](https://skillicons.dev)
+
+**Cloud, DevOps & Tools**
+
+[![My Skills](https://skillicons.dev/icons?i=aws,docker,githubactions,git,vscode,linux&theme=dark)](https://skillicons.dev)
+
+**AI & Automation**
+
+[![My Skills](https://skillicons.dev/icons?i=python,playwright&theme=dark)](https://skillicons.dev)
+&nbsp;
+![Claude](https://img.shields.io/badge/Anthropic_Claude-D97706?style=for-the-badge&logo=anthropic&logoColor=white)
+![MikroTik](https://img.shields.io/badge/MikroTik-293239?style=for-the-badge&logo=mikrotik&logoColor=white)
 
 </div>
 
@@ -115,44 +69,30 @@ User Input
 
 <table>
 <tr>
-<td width="50%">
+<td valign="top" width="50%">
 
-### Full-Stack Systems
-- Operational management platforms (TypeScript + React + PostgreSQL)
-- Dynamic reporting: PDF/Excel export, Chart.js/Recharts dashboards
-- Real-time features via WebSockets (live scores, dashboards)
-- AWS S3 integration with presigned URLs and image processing
-- Interactive maps with Leaflet
+**Full-Stack Systems**
+> Enterprise management platforms, dynamic reporting (PDF/Excel), interactive dashboards with Chart.js/Recharts, AWS S3 with presigned URLs, interactive maps with Leaflet.
 
 </td>
-<td width="50%">
+<td valign="top" width="50%">
 
-### AI & Automation
-- Multi-agent orchestration with MCP Protocol
-- Deterministic routing trees replacing probabilistic LLM dispatch
-- Executable eval frameworks for agent quality measurement
-- Prompt caching strategies (60–75% cost reduction on static context)
-- LLM security: prompt injection testing, OWASP LLM Top10 mitigation
+**AI & Automation**
+> LLM-powered automation pipelines, business workflow integration, IoT sensor data pipelines, Python/PowerShell scripting, Playwright-based browser automation.
 
 </td>
 </tr>
 <tr>
-<td>
+<td valign="top">
 
-### Security Engineering
-- JWT + RBAC authentication systems
-- Audit logging and rate limiting (Helmet, express-rate-limit)
-- Input validation at all system boundaries (Zod schemas)
-- AI Red Teaming: adversarial prompt testing, jailbreak resistance
+**Security Engineering**
+> JWT + RBAC auth systems, audit logging, rate limiting (Helmet), Zod schema validation at all boundaries, LLM Red Teaming (OWASP LLM Top10, adversarial prompt testing).
 
 </td>
-<td>
+<td valign="top">
 
-### WISP & Networking
-- MikroTik RouterOS: QoS, Queue Trees, Firewall rules
-- Network management tooling with real-time diagnostics
-- IoT sensor integration and Python/PowerShell automation
-- Bandwidth monitoring and customer management systems
+**WISP & Real-Time**
+> MikroTik RouterOS: QoS, Queue Trees, Firewall. Network management tooling, bandwidth monitoring, customer systems. WebSocket-driven live dashboards and event infrastructure.
 
 </td>
 </tr>
@@ -160,58 +100,57 @@ User Input
 
 ---
 
-## AI Security Focus
-
-Studying applied LLM security since November 2025 — motivated by a real incident.
-
-| Area | Resources & Tools |
-|------|-------------------|
-| **Prompt Injection** | OWASP LLM Top10, Promptfoo adversarial testing |
-| **Threat Modeling** | STRIDE-GPT, AI-specific attack surface mapping |
-| **Red Teaming AI** | Jailbreak resistance, multi-turn attack chains |
-| **Secure Agent Design** | Zero-trust classification, Circuit Breaker patterns, idempotency guards |
-
-> The OLE Agent Stack implements: Zero Trust for unknown classifications · idempotency guards on write operations · anti-loop protection (max 3 delegation levels) · Circuit Breaker state machine per worker.
-
----
-
 ## GitHub Stats
 
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=Ol3Ramirez&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ol3Ramirez&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" />
+<img height="175" src="https://github-readme-stats.vercel.app/api?username=Ol3Ramirez&show_icons=true&theme=radical&hide_border=true&count_private=true&include_all_commits=true&rank_icon=github" />
+&nbsp;&nbsp;
+<img height="175" src="https://streak-stats.demolab.com?user=Ol3Ramirez&theme=radical&hide_border=true&date_format=M%20j%5B%2C%20Y%5D" />
 
-</div>
+<br/><br/>
 
-<div align="center">
-
-[![GitHub Streak](https://streak-stats.demolab.com?user=Ol3Ramirez&theme=tokyonight&hide_border=true)](https://git.io/streak-stats)
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Ol3Ramirez&bg_color=141321&color=f472b6&line=7c3aed&point=f59e0b&area=true&area_color=c026d3&hide_border=true" width="96%" />
 
 </div>
 
 ---
 
-## Specialization Matrix
+## Trophies
 
-| Domain | Level | Currently Building |
-|--------|-------|--------------------|
-| Full-Stack TypeScript | ████████░░ Advanced | SvelteKit + Supabase apps |
-| AI Systems / Agents | ███████░░░ Intermediate | Multi-agent orchestration (OLE Stack) |
-| LLM Security | ██████░░░░ Active Learning | Red teaming, prompt injection |
-| WISP / Networking | ████████░░ Advanced | MikroTik automation tooling |
-| Cloud (AWS) | ██████░░░░ Intermediate | S3 integrations, serverless |
-| Real-Time Systems | ████████░░ Advanced | WebSocket infrastructure |
-| IoT & Automation | ██████░░░░ Intermediate | Sensor networks, Python scripts |
+<div align="center">
+
+[![trophy](https://github-profile-trophy.vercel.app/?username=Ol3Ramirez&theme=radical&no-frame=true&no-bg=true&margin-w=8&column=7)](https://github.com/ryo-ma/github-profile-trophy)
+
+</div>
+
+---
+
+## Skills at a Glance
+
+<div align="center">
+
+| Area | Technologies |
+|------|-------------|
+| **Languages** | TypeScript · JavaScript · Python · HTML · CSS · Bash |
+| **Frontend** | React · SvelteKit · Tailwind CSS · Vite · Redux |
+| **Backend** | Node.js · Express · REST APIs · WebSockets |
+| **Databases** | PostgreSQL · Supabase · SQLite · TypeORM |
+| **Validation** | Zod · React Hook Form |
+| **Cloud** | AWS S3 · Docker · GitHub Actions · Presigned URLs |
+| **AI / LLM** | Claude API · Playwright · LLM Security · Prompt Injection |
+| **Networking** | MikroTik RouterOS · WISP · QoS · IoT |
+
+</div>
 
 ---
 
 <div align="center">
 
-**Open to collaborations on:** full-stack systems · AI automation pipelines · network management tooling · LLM security research
+*Open to collaborations on:* **full-stack systems** · **AI automation** · **LLM security** · **network tooling**
 
-*Building things that actually run in production — from Oaxaca, México*
+<br/>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:24243e,50:302b63,100:0f0c29&height=100&section=footer" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:f59e0b,40:db2777,70:c026d3,100:7c3aed&height=120&section=footer" width="100%"/>
 
 </div>
