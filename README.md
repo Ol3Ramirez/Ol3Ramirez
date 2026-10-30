@@ -1,204 +1,116 @@
-<div align="center">
+# Olegario Ramírez
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:7c3aed,35:a855f7,65:db2777,100:f59e0b&height=280&section=header&text=Olegario%20Ram%C3%ADrez&fontSize=62&fontColor=ffffff&fontAlignY=38&desc=Full%20Stack%20Developer%20%7C%20TypeScript%20%C2%B7%20React%20%C2%B7%20Node.js%20%C2%B7%20AI%20Security&descAlignY=60&descColor=fde68a&animation=fadeIn" width="100%"/>
+**Full-stack engineer, real-time systems, LLM-agent tooling**
 
-<br/>
+I build TypeScript and Python systems where timing and correctness matter: a WebSocket control plane used in live broadcasts, a PostgreSQL operations platform in production, and the multi-agent LLM tooling I use to build both.
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=18&pause=1200&color=F472B6&center=true&vCenter=true&width=820&lines=Building+enterprise-critical+full-stack+systems;TypeScript+%7C+React+%7C+SvelteKit+%7C+Node.js;Real-time+infrastructure+%2B+WebSockets+%2B+PostgreSQL;AI+Automation+%2B+LLM+Security+%2B+Red+Teaming;WISP+Networks+%2B+MikroTik+RouterOS+%2B+QoS;Oaxaca%2C+M%C3%A9xico+%E2%80%94+Available+remote+worldwide)](https://git.io/typing-svg)
+100+ Playwright E2E cases on the relay, with CI on Linux, Windows and macOS.
 
-<br/>
+Oaxaca, México (UTC−6). Open to remote roles. Email: <ol3rm2@gmail.com>
 
-![Profile Views](https://komarev.com/ghpvc/?username=Ol3Ramirez&style=for-the-badge&color=7c3aed&label=PROFILE+VIEWS)
-&nbsp;
-[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ol3rm2@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/oleramirez)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Ol3Ramirez)
+## What I build
 
-</div>
+### Live-broadcast control plane (real-time)
 
----
+**Problem.** Run broadcast graphics (scoreboard, lineups, instant replay) for live sports from the on-site operator's phone, in sync with a video feed that arrives seconds late.
 
-<img align="right" width="40%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ol3Ramirez&layout=compact&theme=radical&hide_border=true&langs_count=8&card_width=320" />
+**Built.** A Python asyncio WebSocket relay that fans commands out to browser-source overlays and drives OBS Studio over obs-websocket v5. It keeps per-client outbox queues, replays state on reconnect, checks tokens in constant time and allowlists Origins against cross-site WebSocket hijacking. A "field mode" delays commands to match stream latency, and an FFmpeg pipeline cuts slow-motion replays. One config per event series feeds every overlay.
 
-## About Me
+**Stack.** Python (asyncio, websockets), vanilla JS, OBS Studio, FFmpeg, Node.js (telegraf, Telegram bot for remote OBS control), Rust (tokio, small preflight CLI), PM2, Bash + PowerShell.
 
-Full Stack Developer building **production-critical systems** that combine robust backend engineering with AI automation, real-time infrastructure, and security-first design.
+**Evidence.** Used in live broadcasts. 100+ Playwright E2E cases across 18 specs, each starting the real relay and HTTP server, run in GitHub Actions on Windows and macOS behind a Linux lint gate. The bot has an integration harness against a fake server that speaks the real obs-websocket protocol. A written threat model ships with the code.
 
-- **Based in** Oaxaca, México — Available remote worldwide
-- **Focus:** Enterprise platforms · Real-time systems · AI pipelines
-- **Studying:** LLM Security · OWASP LLM Top 10 · Prompt Injection · AI Red Teaming
-- **Running:** WISP network with MikroTik / RouterOS automation
-- **Principle:** *Ship software that actually runs in production.*
+*Diagram: the operator's phone sends authenticated WebSocket commands to a Python relay. The relay broadcasts state to browser-source overlays and controls OBS Studio over obs-websocket v5; OBS feeds replay clips to FFmpeg, and a Telegram bot also controls OBS.*
 
-<br clear="right"/>
+```mermaid
+flowchart TD
+  phone["Operator phone<br/>(control panel)"] -->|"WebSocket + token"| relay["WebSocket relay<br/>Python asyncio"]
+  relay -->|"broadcast + state replay"| overlays["Browser-source<br/>overlays"]
+  relay -->|"obs-websocket v5"| obs["OBS Studio"]
+  obs -->|"replay buffer"| ffmpeg["FFmpeg<br/>slow-motion clips"]
+  bot["Telegram bot<br/>Node.js"] -->|"obs-websocket v5"| obs
+```
 
----
+### Operations platform for an internet service provider
 
-## Tech Stack
+**Problem.** Manage customers, plans, payments and receivables, inventory, support tickets and field-technician work, including offline work.
 
-<div align="center">
+**Built.** A SvelteKit app on Supabase/PostgreSQL. Row Level Security enforces data access in the database, with JWT auth (Supabase Auth) and role-based access on top. An audit log is written by a trigger and by the app, and pg_cron runs scheduled jobs. Hardening: database-persisted rate limiting, security headers, CSRF origin checks, Zod validation on endpoints and forms. Field technicians use an offline-first PWA (IndexedDB + service worker) with an interactive map.
 
-**Languages & Runtimes**
+**Stack.** SvelteKit (Svelte 5), TypeScript, Supabase / PostgreSQL, Zod, Chart.js, Leaflet, Tailwind, Sentry, Vercel.
 
-[![My Skills](https://skillicons.dev/icons?i=ts,js,py,html,css,bash&theme=dark)](https://skillicons.dev)
+**Evidence.** Deployed to production for an internet service provider. 30+ RLS policies, 10 database triggers, 14 versioned migrations.
 
-**Frontend**
+### LLM agent orchestration framework
 
-[![My Skills](https://skillicons.dev/icons?i=react,svelte,tailwind,vite,redux&theme=dark)](https://skillicons.dev)
+**Problem.** Route engineering and research tasks to the right model and tools, and keep the routing itself tested.
 
-**Backend & Databases**
+**Built.** A multi-agent framework I use daily. A router classifies each task and delegates it to specialized workers, with a fan-out planner for larger jobs. Tools are reached through MCP, and episodic memory lives in SQLite with idempotent writes. An automated quality gate runs unit tests, lint, spec-conformance and documentation checks.
 
-[![My Skills](https://skillicons.dev/icons?i=nodejs,express,postgres,supabase,sqlite&theme=dark)](https://skillicons.dev)
+**Stack.** Python, Node.js (zero runtime deps), SQLite, MCP.
 
-**Cloud, DevOps & Tools**
+**Evidence.** 300+ automated tests (Python + Node) and golden-set routing evals.
 
-[![My Skills](https://skillicons.dev/icons?i=aws,docker,githubactions,git,vscode,linux&theme=dark)](https://skillicons.dev)
+*Diagram: a router sends each task to specialized workers. Workers reach tools through MCP, keep idempotent SQLite memory and are checked by a quality gate; golden-set evals test the router.*
 
-**AI & Automation**
+```mermaid
+flowchart TD
+  evals["Golden-set<br/>routing evals"] -.-> router["Router<br/>(classifies each task)"]
+  router --> workers["Specialized workers"]
+  workers --> tools["Tools via MCP"]
+  workers --> mem[("Episodic memory<br/>SQLite, idempotent")]
+  workers --> gate["Quality gate<br/>tests, lint, spec checks"]
+```
 
-[![My Skills](https://skillicons.dev/icons?i=python,playwright&theme=dark)](https://skillicons.dev)
-&nbsp;&nbsp;
-![Claude API](https://img.shields.io/badge/Anthropic_Claude-D97706?style=flat-square&logo=anthropic&logoColor=white&labelColor=1a1a2e)
-![LLM Pipelines](https://img.shields.io/badge/LLM_Pipelines-6d28d9?style=flat-square&logo=openai&logoColor=white&labelColor=1a1a2e)
+### Content-operations toolkit (alpha)
 
-**Networking & IoT**
+**Problem.** Run content for several social pages from one place, with per-page config and an approval step before anything is published.
 
-![MikroTik](https://img.shields.io/badge/MikroTik_RouterOS-293239?style=for-the-badge&logo=mikrotik&logoColor=white)
-![WebSockets](https://img.shields.io/badge/WebSockets-010101?style=for-the-badge&logo=socket.io&logoColor=white)
-![IoT](https://img.shields.io/badge/IoT_Automation-0066CC?style=for-the-badge&logo=raspberry-pi&logoColor=white)
+**Built.** A TypeScript monorepo, still in development. A strict-TypeScript core with Zod-validated, inheritable per-page config, SQLite persistence with versioned migrations, platform adapters behind one interface and a content-queue state machine (draft, review, approved, published) designed around a human-only approval step. Also: a text-to-speech service with Python inference isolated behind a process watchdog, and an HTML-to-video wrapper.
 
-</div>
+**Stack.** TypeScript (strict, `noUncheckedIndexedAccess`), Zod, SQLite (better-sqlite3), Vitest, Python, pytest, pnpm workspaces, FFmpeg.
 
----
+**Evidence.** 500+ automated tests (Vitest + pytest), including credential-handling and path-traversal tests. 5 written ADRs (API-first design, adapter shape, SQLite driver choice).
 
-## What I Build
+### Local-AI media pipelines
 
-<table>
-<tr>
-<td valign="top" width="50%">
+**Problem.** Turn long live streams into short captioned clips and written summaries without sending media to a paid cloud API.
 
-**Full-Stack Systems**
-> Enterprise management platforms · Dynamic reporting (PDF/Excel) · Interactive dashboards (Chart.js / Recharts) · AWS S3 presigned URLs · Interactive maps with Leaflet · TypeORM + PostgreSQL · REST APIs
+**Built.** A pipeline that turns long streams into short vertical clips: word-level transcription (WhisperX), local-LLM highlight detection (Ollama), a face-aware static 9:16 crop (MediaPipe) and burned-in karaoke-style captions (FFmpeg). A second CLI transcribes downloads or live streams in chunks (faster-whisper) and drafts analysis with a local LLM. I compared several local models before picking a default.
 
-</td>
-<td valign="top" width="50%">
+**Stack.** Python, WhisperX, faster-whisper, Ollama, MediaPipe, OpenCV, FFmpeg, pytest.
 
-**AI & Automation**
-> LLM-powered business automation pipelines · IoT sensor data collection · Python / PowerShell scripting · Playwright browser automation · API orchestration · Multi-agent workflow design
+**Evidence.** 50+ CLI tests, including a regression test that blocks reinstalling a media-download dependency version with a known CVE. Written security audit, all findings resolved.
 
-</td>
-</tr>
-<tr>
-<td valign="top">
+## How I work with AI agents
 
-**Security Engineering**
-> JWT + RBAC authentication systems · Audit logging · Rate limiting with Helmet · Zod schema validation at all system boundaries · LLM Red Teaming · OWASP-aligned threat modeling
+- I build daily with AI coding agents (Claude Code) and treat them as an unreliable dependency: routed, tested and gated.
+- Custom guardrail hooks (150+ tests) block secrets, unsafe commands and malformed commits before they land. The Bash and PowerShell bootstrap scripts are equivalent on Windows and macOS.
+- Before adopting a new model I run structured experiments (latency, calibration, synthesis quality) and turn the findings into routing rules.
+- My tooling is designed so that publishing requires explicit human approval.
 
-</td>
-<td valign="top">
+## Engineering habits
 
-**WISP & Real-Time**
-> MikroTik RouterOS: QoS · Queue Trees · Firewall rules · Network management tooling · Bandwidth monitoring · Customer billing systems · WebSocket-driven live dashboards
+- Decisions written down: ADRs, threat models, dated security audits.
+- Adversarial review of my own fixes: multi-round audits, and a second-model review on race conditions.
 
-</td>
-</tr>
-</table>
+## Stack
 
----
+| Area | Tools |
+|---|---|
+| **Languages** | TypeScript (strict), Python, JavaScript / Node.js, SQL, Bash, PowerShell |
+| **Web** | SvelteKit (Svelte 5), Tailwind CSS, Vite, vanilla HTML/CSS/JS. Also React / Next.js, Prisma |
+| **Data & real-time** | PostgreSQL (RLS, triggers, pg_cron), Supabase, SQLite, Zod, WebSockets, REST |
+| **AI / LLM** | Multi-agent orchestration, MCP, Claude Code, local LLMs (Ollama), WhisperX / faster-whisper, MediaPipe, FFmpeg |
+| **Testing & delivery** | Vitest, pytest, Playwright, node:test, GitHub Actions, Biome, Ruff, Sentry, Vercel, PM2 |
+| **Networking** | MikroTik RouterOS (WireGuard, firewall/NAT), Linux |
 
-## Cybersecurity & AI Security
+## Currently deepening
 
-<div align="center">
-
-*Actively studying the intersection of AI systems and offensive security*
-
-<br/>
-
-![OWASP LLM](https://img.shields.io/badge/OWASP_LLM_Top10-000000?style=for-the-badge&logo=owasp&logoColor=white)
-![Prompt Injection](https://img.shields.io/badge/Prompt_Injection-7c3aed?style=for-the-badge&logo=openai&logoColor=white)
-![AI Red Teaming](https://img.shields.io/badge/AI_Red_Teaming-dc2626?style=for-the-badge&logo=hackthebox&logoColor=white)
-![LLM Security](https://img.shields.io/badge/LLM_Security-db2777?style=for-the-badge&logo=anthropic&logoColor=white)
-![STRIDE-GPT](https://img.shields.io/badge/STRIDE--GPT_Threats-f59e0b?style=for-the-badge&logo=cyberdefenders&logoColor=black)
-![Adversarial ML](https://img.shields.io/badge/Adversarial_ML-1d4ed8?style=for-the-badge&logo=tensorflow&logoColor=white)
-
-</div>
-
-<br/>
-
-| Domain | Focus Areas |
-|--------|------------|
-| **OWASP LLM Top 10** | Prompt injection · Insecure output handling · Model theft · Data poisoning · Supply chain attacks |
-| **AI Red Teaming** | Adversarial prompt testing · Jailbreak analysis · Guardrail evaluation · Boundary probing |
-| **Security Engineering** | JWT / RBAC · Rate limiting · Zod schema validation · Audit logging · CSRF protection |
-| **Threat Modeling** | STRIDE-GPT methodology · Attack surface analysis for AI-integrated systems |
-| **Network Security** | MikroTik firewall rules · WISP access control · Bandwidth abuse prevention |
+LLM application security (OWASP Top 10 for LLM Applications) and detection engineering (Sigma, MITRE ATT&CK).
 
 ---
 
-## GitHub Stats
+Most of my day-to-day work shows up in this profile's contribution graph. I can walk through the architecture and code of any of these projects in an interview.
 
-<div align="center">
-
-<img height="180" src="https://github-readme-stats.vercel.app/api?username=Ol3Ramirez&show_icons=true&theme=radical&hide_border=true&include_all_commits=true&rank_icon=github&hide=contribs&ring_color=f59e0b" />
-&nbsp;&nbsp;
-<img height="180" src="https://streak-stats.demolab.com?user=Ol3Ramirez&theme=radical&hide_border=true&date_format=M%20j%5B%2C%20Y%5D" />
-
-<br/><br/>
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Ol3Ramirez&bg_color=141321&color=f472b6&line=7c3aed&point=f59e0b&area=true&area_color=c026d3&hide_border=true" width="96%" />
-
-</div>
-
----
-
-## Skills at a Glance
-
-<div align="center">
-
-| Area | Technologies |
-|------|-------------|
-| **Languages** | TypeScript · JavaScript · Python · HTML · CSS · Bash |
-| **Frontend** | React · SvelteKit · Tailwind CSS · Vite · Redux |
-| **Backend** | Node.js · Express · REST APIs · WebSockets |
-| **Databases** | PostgreSQL · Supabase · SQLite · TypeORM |
-| **Validation** | Zod · React Hook Form |
-| **Cloud** | AWS S3 · Docker · GitHub Actions · Presigned URLs |
-| **AI / LLM** | Claude API · Playwright · LLM Pipelines · Prompt Engineering |
-| **Security** | OWASP LLM Top10 · Red Teaming · JWT / RBAC · Adversarial ML |
-| **Networking** | MikroTik RouterOS · WISP · QoS · Queue Trees · IoT Automation |
-
-</div>
-
----
-
-## Currently Learning
-
-<div align="center">
-
-![AI Security](https://img.shields.io/badge/AI_Security-In_Progress-7c3aed?style=for-the-badge&labelColor=1a1a2e)
-&nbsp;
-![Red Teaming](https://img.shields.io/badge/Red_Teaming-Active-db2777?style=for-the-badge&labelColor=1a1a2e)
-&nbsp;
-![Multi-Agent Systems](https://img.shields.io/badge/Multi--Agent_Orchestration-Studying-f59e0b?style=for-the-badge&labelColor=1a1a2e)
-
-</div>
-
-<br/>
-
-| Track | Topics |
-|-------|--------|
-| **LLM Security** | OWASP LLM Top10 · Prompt Injection · Jailbreak techniques · Model security auditing |
-| **AI Engineering** | Multi-agent orchestration · LLM evaluation frameworks · Autonomous agent design |
-| **Systems** | Advanced PostgreSQL · Distributed real-time systems · Message queue architecture |
-
----
-
-<div align="center">
-
-*Open to collaborations on:* **full-stack systems** · **AI automation** · **LLM security** · **network tooling**
-
-<br/>
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:f59e0b,40:db2777,70:c026d3,100:7c3aed&height=120&section=footer" width="100%"/>
-
-</div>
+Spanish (native). Email: <ol3rm2@gmail.com>
