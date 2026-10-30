@@ -2,7 +2,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:7c3aed,35:a855f7,65:db2777,100:f59e0b&height=250&section=header&text=Olegario%20Ram%C3%ADrez&fontSize=58&fontColor=ffffff&fontAlignY=38&desc=Full-stack%20engineer%20%C2%B7%20Real-time%20systems%20%C2%B7%20LLM-agent%20tooling&descAlignY=60&descColor=fde68a&animation=fadeIn" width="100%" alt="Olegario Ramírez, full-stack engineer, real-time systems, LLM-agent tooling"/>
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=18&pause=1200&color=F472B6&center=true&vCenter=true&width=820&lines=WebSocket+control+plane+used+in+live+broadcasts;SvelteKit+%2B+Supabase%2FPostgreSQL+in+production;Multi-agent+LLM+tooling+with+MCP;300%2B+tests+%C2%B7+CI+on+Linux%2C+Windows+and+macOS;Oaxaca%2C+M%C3%A9xico+%E2%80%94+open+to+remote+roles)](https://git.io/typing-svg)
+[![Open to remote roles. Real-time systems, production SvelteKit and React apps, multi-agent LLM tooling](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=18&pause=1200&color=DB2777&center=true&vCenter=true&width=820&lines=Open+to+remote+roles+%E2%80%94+Oaxaca%2C+M%C3%A9xico+(UTC-6);WebSocket+control+plane+used+in+live+broadcasts;SvelteKit+%2B+Supabase%2FPostgreSQL+in+production;Aircraft+weight-and-balance+dispatch+%E2%80%94+React+%2B+Express;Multi-agent+LLM+tooling+with+MCP;300%2B+tests+%C2%B7+CI+on+Linux%2C+Windows+and+macOS)](https://git.io/typing-svg)
 
 [![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ol3rm2@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/oleramirez)
@@ -22,6 +22,15 @@ I build TypeScript and Python systems where timing and correctness matter: a Web
 
 </div>
 
+| Project | What it proves | Stack | Status |
+|---|---|---|---|
+| [🔴 Live-broadcast control plane](#-live-broadcast-control-plane-real-time) | Real-time systems, E2E testing | Python asyncio, OBS, FFmpeg | Used live |
+| [🌐 ISP operations platform](#-operations-platform-for-an-internet-service-provider) | Full-stack, Postgres RLS | SvelteKit, Supabase | Production |
+| [🛫 Flight dispatch and statistics](#-flight-dispatch-and-statistics-platform-for-an-aviation-unit) | Full-stack, domain math, reporting | React, Express, TypeORM | Private repo |
+| [🧠 LLM agent orchestration](#-llm-agent-orchestration-framework) | Model routing, evals, guardrails | Python, Node.js, MCP | Daily use |
+| [📣 Content-operations toolkit](#-content-operations-toolkit-alpha) | Strict TypeScript, ADRs | TypeScript, Zod, SQLite | Alpha |
+| [🎬 Local-AI media pipelines](#-local-ai-media-pipelines) | Local LLM + media | Python, WhisperX, FFmpeg | Working CLI |
+
 ---
 
 ## Tech stack
@@ -34,11 +43,15 @@ I build TypeScript and Python systems where timing and correctness matter: a Web
 
 **Frontend**
 
-[![Frontend](https://skillicons.dev/icons?i=svelte,react,nextjs,tailwind,vite,redux&theme=dark)](https://skillicons.dev)
+[![Frontend](https://skillicons.dev/icons?i=svelte,react,nextjs,tailwind,materialui,vite,redux&theme=dark)](https://skillicons.dev)
 
 **Backend and data**
 
 [![Backend](https://skillicons.dev/icons?i=nodejs,express,postgres,supabase,sqlite,prisma&theme=dark)](https://skillicons.dev)
+
+![TypeORM](https://img.shields.io/badge/TypeORM-FE0803?style=flat-square&logo=typeorm&logoColor=white)
+![Chart.js](https://img.shields.io/badge/Chart.js-FF6384?style=flat-square&logo=chartdotjs&logoColor=white)
+![Zod](https://img.shields.io/badge/Zod-3E67B1?style=flat-square&logo=zod&logoColor=white)
 
 **DevOps and testing**
 
@@ -76,11 +89,15 @@ I build TypeScript and Python systems where timing and correctness matter: a Web
 
 **Problem.** Run broadcast graphics (scoreboard, lineups, instant replay) for live sports from the on-site operator's phone, in sync with a video feed that arrives seconds late.
 
+**Evidence.** Used in live broadcasts. 100+ Playwright E2E cases across 18 specs, each starting the real relay and HTTP server, run in GitHub Actions on Windows and macOS behind a Linux lint gate. The bot has an integration harness against a fake server that speaks the real obs-websocket protocol. A written threat model ships with the code.
+
+<details><summary><b>Architecture and details</b></summary>
+
 **Built.** A Python asyncio WebSocket relay that fans commands out to browser-source overlays and drives OBS Studio over obs-websocket v5. It keeps per-client outbox queues, replays state on reconnect, checks tokens in constant time and allowlists Origins against cross-site WebSocket hijacking. A "field mode" delays commands to match stream latency, and an FFmpeg pipeline cuts slow-motion replays. One config per event series feeds every overlay.
 
 **Stack.** Python (asyncio, websockets), vanilla JS, OBS Studio, FFmpeg, Node.js (telegraf, Telegram bot for remote OBS control), Rust (tokio, small preflight CLI), PM2, Bash + PowerShell.
 
-**Evidence.** Used in live broadcasts. 100+ Playwright E2E cases across 18 specs, each starting the real relay and HTTP server, run in GitHub Actions on Windows and macOS behind a Linux lint gate. The bot has an integration harness against a fake server that speaks the real obs-websocket protocol. A written threat model ships with the code.
+</details>
 
 *Diagram: the operator's phone sends authenticated WebSocket commands to a Python relay. The relay broadcasts state to browser-source overlays and controls OBS Studio over obs-websocket v5; OBS feeds replay clips to FFmpeg, and a Telegram bot also controls OBS.*
 
@@ -105,11 +122,51 @@ flowchart TD
 
 **Problem.** Manage customers, plans, payments and receivables, inventory, support tickets and field-technician work, including offline work.
 
+**Evidence.** Deployed to production for an internet service provider. 30+ RLS policies, 10 database triggers, 14 versioned migrations.
+
+<details><summary><b>Architecture and details</b></summary>
+
 **Built.** A SvelteKit app on Supabase/PostgreSQL. Row Level Security enforces data access in the database, with JWT auth (Supabase Auth) and role-based access on top. An audit log is written by a trigger and by the app, and pg_cron runs scheduled jobs. Hardening: database-persisted rate limiting, security headers, CSRF origin checks, Zod validation on endpoints and forms. Field technicians use an offline-first PWA (IndexedDB + service worker) with an interactive map.
 
 **Stack.** SvelteKit (Svelte 5), TypeScript, Supabase / PostgreSQL, Zod, Chart.js, Leaflet, Tailwind, Sentry, Vercel.
 
-**Evidence.** Deployed to production for an internet service provider. 30+ RLS policies, 10 database triggers, 14 versioned migrations.
+</details>
+
+### 🛫 Flight dispatch and statistics platform for an aviation unit
+
+[![Stack](https://skillicons.dev/icons?i=react,ts,vite,materialui,redux,nodejs,express,postgres&theme=dark)](https://skillicons.dev)
+&nbsp;![TypeORM](https://img.shields.io/badge/TypeORM-FE0803?style=flat-square&logo=typeorm&logoColor=white)
+![Chart.js](https://img.shields.io/badge/Chart.js-FF6384?style=flat-square&logo=chartdotjs&logoColor=white)
+![JWT](https://img.shields.io/badge/JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white)
+![Aircraft](https://img.shields.io/badge/Weight_%26_balance-Hawker_400XP_%C2%B7_Bell_407-0ea5e9?style=flat-square)
+
+**Problem.** An aviation unit that flies air-ambulance and medical-transfer missions tracked flights, maintenance and pre-flight weight-and-balance on paper and spreadsheets. Management needed reliable monthly statistics, and pilots needed a dispatch sheet they could trust before takeoff.
+
+**Evidence.** 14 TypeORM entities, 5 versioned migrations and ~50 REST endpoints behind token auth. Weight-and-balance math follows the manufacturers' loading tables, kept as typed data separate from the UI. Private repository; I wrote most of the commits and can walk through the code.
+
+<details><summary><b>Architecture and details</b></summary>
+
+**Built.** A React + Express platform, co-developed with a teammate. Pilots fill a dispatch form that computes weight, moment, center of gravity and %MAC for empty, fuel, takeoff and landing conditions, per aircraft type: a Hawker 400XP jet (manufacturer fuel-moment tables, 6.7 lb/gal fuel density) and a Bell 407 helicopter. Each balance is stored with its crew and aircraft. The rest of the app covers medical transfers (origin and destination by state, region and municipality), aircraft inspections, maintenance records, other flights and users with roles. A statistics module ranks aircraft, pilots and hospitals and filters by date range. The server renders Chart.js charts with `chartjs-node-canvas` and stamps them into official PDF templates with `pdf-lib`; ExcelJS handles exports.
+
+**Stack.** React 18, TypeScript, Vite, MUI, Redux Toolkit, Formik + Yup · Node.js, Express, TypeORM, PostgreSQL, JWT, pdf-lib, ExcelJS.
+
+</details>
+
+*Diagram: the pilot's dispatch form computes weight and balance in the browser and saves it through the Express API. The API persists to PostgreSQL via TypeORM and feeds the statistics module, which renders charts on the server into PDF reports and Excel exports.*
+
+```mermaid
+flowchart TD
+  pilot["🧑‍✈️ Pilot dispatch form<br/>React + MUI"] -->|"W&B: weight, moment, CG, %MAC"| api["⚙️ REST API<br/>Express + JWT"]
+  ops["🚑 Transfers, inspections,<br/>maintenance"] --> api
+  api -->|"TypeORM"| db[("🐘 PostgreSQL")]
+  api --> stats["📊 Statistics<br/>aircraft · pilots · hospitals"]
+  stats --> pdf["📄 PDF reports<br/>chartjs-node-canvas + pdf-lib"]
+  stats --> xls["📑 Excel export<br/>ExcelJS"]
+  classDef core fill:#0ea5e9,stroke:#bae6fd,color:#fff
+  classDef edge fill:#1e1033,stroke:#a855f7,color:#f5d0fe
+  class api core
+  class pilot,ops,db,stats,pdf,xls edge
+```
 
 ### 🧠 LLM agent orchestration framework
 
@@ -118,13 +175,17 @@ flowchart TD
 ![Claude](https://img.shields.io/badge/Claude_Code-D97706?style=flat-square&logo=anthropic&logoColor=white)
 ![Tests](https://img.shields.io/badge/300%2B_tests-Python_%2B_Node-7c3aed?style=flat-square)
 
-**Problem.** Route engineering and research tasks to the right model and tools, and keep the routing itself tested.
+**Problem.** Route engineering and research tasks to the right model, agent and tool, and keep that routing itself tested.
+
+**Evidence.** 300+ automated tests (Python + Node), golden-set routing evals and CI on Linux, Windows and macOS. A 24-branch routing tree and a 70+ card catalog of engineering patterns, each tied to its sources.
+
+<details><summary><b>Architecture and details</b></summary>
 
 **Built.** A multi-agent framework I use daily. A router classifies each task and delegates it to specialized workers, with a fan-out planner for larger jobs. Tools are reached through MCP, and episodic memory lives in SQLite with idempotent writes. An automated quality gate runs unit tests, lint, spec-conformance and documentation checks.
 
 **Stack.** Python, Node.js (zero runtime deps), SQLite, MCP.
 
-**Evidence.** 300+ automated tests (Python + Node), golden-set routing evals, and CI on Linux, Windows and macOS.
+</details>
 
 *Diagram: a router sends each task to specialized workers. Workers reach tools through MCP, keep idempotent SQLite memory and are checked by a quality gate; golden-set evals test the router.*
 
@@ -141,6 +202,52 @@ flowchart TD
   class evals,workers,tools,mem,gate edge
 ```
 
+#### Model and agent delegation
+
+| Model tier | Gets | Checked by |
+|---|---|---|
+| ![Opus](https://img.shields.io/badge/Opus-strongest-D97706?style=flat-square&logo=anthropic&logoColor=white) | Architecture, multi-domain synthesis, root-cause analysis, adversarial review, coordinating 5+ parallel workers | Cross-model review |
+| ![Sonnet](https://img.shields.io/badge/Sonnet-mid--tier-B45309?style=flat-square&logo=anthropic&logoColor=white) | Features, bug fixes, refactors, smaller fan-outs | Tests, lint, spec checks |
+| ![Haiku](https://img.shields.io/badge/Haiku-fast-92400E?style=flat-square&logo=anthropic&logoColor=white) | Search, summaries, renames, formatting, inspection | Quality gate + orchestrator review |
+
+- **Specialized agents.** Planner, code reviewer, security reviewer, TDD guide, debugger and UI/UX critic, each with its own model and tool allowlist. Delegation follows a fixed hierarchy (router → orchestrator → tool executor → MCP tools) that is never inverted, and nesting depth is capped.
+- **Reusable skills.** Packaged workflows for TDD, code review, security scanning, documentation lookup and prompt optimization, loaded only when a task needs them so context stays small.
+- **Cross-model verification.** For architecture decisions, a fast model flags concrete problems, a stronger model from a separate CLI reads the actual files and refines the design, the fast model re-checks its original objections, and only then does the orchestrator approve.
+- **Guardrails.** Custom hooks (150+ tests) block secrets, unsafe commands and malformed commits before they land. Bash and PowerShell bootstrap scripts are equivalent on Windows and macOS. Anything that publishes requires explicit human approval.
+- **Model adoption by experiment.** Before adopting a new model I measure latency, calibration and synthesis quality, then turn the findings into routing rules.
+
+*Diagram: the router sends heavy reasoning to Opus, implementation to Sonnet and mechanical work to Haiku. Opus output gets a second-model review; everything passes the same quality gate.*
+
+```mermaid
+flowchart LR
+  task["📥 Task"] --> router{"🧭 Router"}
+  router -->|"architecture, synthesis"| opus["Opus"]
+  router -->|"features, fixes"| sonnet["Sonnet"]
+  router -->|"search, mechanical"| haiku["Haiku"]
+  opus --> review["🔁 Second-model review"]
+  review --> gate["✅ Quality gate"]
+  sonnet --> gate
+  haiku --> gate
+  classDef core fill:#db2777,stroke:#fbcfe8,color:#fff
+  classDef edge fill:#1e1033,stroke:#a855f7,color:#f5d0fe
+  class router core
+  class task,opus,sonnet,haiku,review,gate edge
+```
+
+<details><summary><b>Pattern catalog: 70+ cards the router and agents build on</b></summary>
+
+| Area | Patterns | Sources |
+|---|---|---|
+| Resilience | Circuit breaker, retry with backoff, timeouts and deadlines, bulkheads, idempotency, graceful degradation, rate limiting | |
+| Reasoning and planning | ReAct, Reflexion, Tree of Thoughts, plan-and-execute, test-time compute | [ReAct](https://arxiv.org/abs/2210.03629) · [Reflexion](https://arxiv.org/abs/2303.11366) · [ToT](https://arxiv.org/abs/2305.10601) |
+| Memory and context | Agentic memory, context engineering, hybrid GraphRAG, cognitive architectures | [GraphRAG](https://arxiv.org/abs/2404.16130) · [CoALA](https://arxiv.org/abs/2309.02427) |
+| Tools and prompts | Tool-calling recovery, structured output, prompt optimization | [Toolformer](https://arxiv.org/abs/2302.04761) · [DSPy](https://arxiv.org/abs/2310.03714) |
+| Security | Lethal trifecta, egress filtering, least privilege, red-teaming, multi-agent security | |
+| Verification | Cross-model review, artifact verification, human-in-the-loop, determinism, agent evaluation | |
+| Cost and observability | Prompt caching, token budgets, automated cost control, speculative decoding, tracing | [Speculative decoding](https://arxiv.org/abs/2211.17192) |
+
+</details>
+
 ### 📣 Content-operations toolkit (alpha)
 
 [![Stack](https://skillicons.dev/icons?i=ts,py,sqlite,vitest,nodejs&theme=dark)](https://skillicons.dev)
@@ -149,11 +256,15 @@ flowchart TD
 
 **Problem.** Run content for several social pages from one place, with per-page config and an approval step before anything is published.
 
+**Evidence.** 500+ automated tests (Vitest + pytest), including credential-handling and path-traversal tests. 5 written ADRs (API-first design, adapter shape, SQLite driver choice).
+
+<details><summary><b>Architecture and details</b></summary>
+
 **Built.** A TypeScript monorepo, still in development. A strict-TypeScript core with Zod-validated, inheritable per-page config, SQLite persistence with versioned migrations, platform adapters behind one interface and a content-queue state machine (draft, review, approved, published) designed around a human-only approval step. Also: a text-to-speech service with Python inference isolated behind a process watchdog, and an HTML-to-video wrapper.
 
 **Stack.** TypeScript (strict, `noUncheckedIndexedAccess`), Zod, SQLite (better-sqlite3), Vitest, Python, pytest, pnpm workspaces, FFmpeg.
 
-**Evidence.** 500+ automated tests (Vitest + pytest), including credential-handling and path-traversal tests. 5 written ADRs (API-first design, adapter shape, SQLite driver choice).
+</details>
 
 ### 🎬 Local-AI media pipelines
 
@@ -165,20 +276,17 @@ flowchart TD
 
 **Problem.** Turn long live streams into short captioned clips and written summaries without sending media to a paid cloud API.
 
+**Evidence.** 50+ CLI tests, including a regression test that blocks reinstalling a media-download dependency version with a known CVE. Written security audit, all findings resolved.
+
+<details><summary><b>Architecture and details</b></summary>
+
 **Built.** A pipeline that turns long streams into short vertical clips: word-level transcription (WhisperX), local-LLM highlight detection (Ollama), a face-aware static 9:16 crop (MediaPipe) and burned-in karaoke-style captions (FFmpeg). A second CLI transcribes downloads or live streams in chunks (faster-whisper) and drafts analysis with a local LLM. I compared several local models before picking a default.
 
 **Stack.** Python, WhisperX, faster-whisper, Ollama, MediaPipe, OpenCV, FFmpeg, pytest.
 
-**Evidence.** 50+ CLI tests, including a regression test that blocks reinstalling a media-download dependency version with a known CVE. Written security audit, all findings resolved.
+</details>
 
 ---
-
-## How I work with AI agents
-
-- I build daily with AI coding agents (Claude Code) and treat them as an unreliable dependency: routed, tested and gated.
-- Custom guardrail hooks (150+ tests) block secrets, unsafe commands and malformed commits before they land. The Bash and PowerShell bootstrap scripts are equivalent on Windows and macOS.
-- Before adopting a new model I run structured experiments (latency, calibration, synthesis quality) and turn the findings into routing rules.
-- My tooling is designed so that publishing requires explicit human approval.
 
 ## Engineering habits
 
@@ -189,8 +297,8 @@ flowchart TD
 
 <div align="center">
 
-![LLM security](https://img.shields.io/badge/OWASP_Top_10_for_LLM_Apps-In_progress-7c3aed?style=for-the-badge&labelColor=1a1a2e)
-![Detection engineering](https://img.shields.io/badge/Sigma_%C2%B7_MITRE_ATT%26CK-Studying-db2777?style=for-the-badge&labelColor=1a1a2e)
+![LLM security](https://img.shields.io/badge/OWASP_Top_10_for_LLM_Apps-In_progress-7c3aed?style=flat-square&labelColor=1a1a2e)
+![Detection engineering](https://img.shields.io/badge/Sigma_%C2%B7_MITRE_ATT%26CK-Studying-db2777?style=flat-square&labelColor=1a1a2e)
 
 </div>
 
