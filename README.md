@@ -200,7 +200,9 @@ flowchart TD
 
 <div align="center">
 
-<img src="https://streak-stats.demolab.com?user=Ol3Ramirez&theme=radical&hide_border=true&date_format=M%20j%5B%2C%20Y%5D" alt="GitHub contribution streak and total contributions, private contributions included" />
+<a href="https://github.com/stats-organization/github-stats-extended"><img height="150" src="https://github-stats-extended.vercel.app/api?username=Ol3Ramirez&show=contributions&hide=stars,commits,prs,issues,contribs&hide_rank=true&theme=radical&hide_border=true&custom_title=Olegario%27s%20GitHub%20activity&card_width=350" alt="Total GitHub contributions, private contributions included" /></a>
+&nbsp;&nbsp;
+<img height="150" src="https://streak-stats.demolab.com?user=Ol3Ramirez&theme=radical&hide_border=true&date_format=M%20j%5B%2C%20Y%5D" alt="GitHub contribution streak and total contributions, private contributions included" />
 
 </div>
 
