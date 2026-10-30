@@ -2,7 +2,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:7c3aed,35:a855f7,65:db2777,100:f59e0b&height=250&section=header&text=Olegario%20Ram%C3%ADrez&fontSize=58&fontColor=ffffff&fontAlignY=38&desc=Full-stack%20engineer%20%C2%B7%20Real-time%20systems%20%C2%B7%20LLM-agent%20tooling&descAlignY=60&descColor=fde68a&animation=fadeIn" width="100%" alt="Olegario Ramírez, full-stack engineer, real-time systems, LLM-agent tooling"/>
 
-[![Open to remote roles. Real-time systems, production SvelteKit and React apps, multi-agent LLM tooling](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=18&pause=1200&color=DB2777&center=true&vCenter=true&width=820&lines=Open+to+remote+roles+%E2%80%94+Oaxaca%2C+M%C3%A9xico+(UTC-6);Full-stack+TypeScript+%C2%B7+Python;Real-time+WebSocket+systems;SvelteKit+%2F+React+%2B+PostgreSQL+in+production;Multi-agent+LLM+tooling+with+MCP;Tests+%2B+CI+on+Linux%2C+Windows+and+macOS)](https://git.io/typing-svg)
+[![Open to remote roles. Real-time systems, production SvelteKit and React apps, multi-agent LLM tooling](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=18&pause=1200&color=DB2777&center=true&vCenter=true&width=820&lines=Open+to+remote+roles+%E2%80%94+Oaxaca%2C+M%C3%A9xico+(UTC-6);WebSocket+control+plane+used+in+live+broadcasts;SvelteKit+%2B+Supabase%2FPostgreSQL+in+production;Aircraft+weight-and-balance+dispatch+%E2%80%94+React+%2B+Express;Multi-agent+LLM+tooling+with+MCP;300%2B+tests+%C2%B7+CI+on+Linux%2C+Windows+and+macOS)](https://git.io/typing-svg)
 
 [![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ol3rm2@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/oleramirez)
@@ -11,16 +11,25 @@
 
 </div>
 
-I build TypeScript and Python systems where timing and correctness matter: real-time WebSocket services, PostgreSQL-backed web apps running in production, and the multi-agent LLM tooling I use to ship them faster without skipping tests.
+I build TypeScript and Python systems where timing and correctness matter: a WebSocket control plane used in live broadcasts, a PostgreSQL operations platform in production, and the multi-agent LLM tooling I use to build both.
 
 <div align="center">
 
 ![Playwright E2E](https://img.shields.io/badge/Playwright_E2E-100%2B_cases-2EAD33?style=for-the-badge&logo=playwright&logoColor=white)
 ![Test stack](https://img.shields.io/badge/Tests-pytest_%C2%B7_Vitest_%C2%B7_Playwright-7c3aed?style=for-the-badge&logo=vitest&logoColor=white)
 ![CI](https://img.shields.io/badge/CI-Linux_%C2%B7_Windows_%C2%B7_macOS-db2777?style=for-the-badge&logo=githubactions&logoColor=white)
-![Production](https://img.shields.io/badge/Shipped_to-production-f59e0b?style=for-the-badge&logo=vercel&logoColor=black)
+![Production](https://img.shields.io/badge/In_production-ISP_platform-f59e0b?style=for-the-badge&logo=supabase&logoColor=black)
 
 </div>
+
+| Project | What it proves | Stack | Status |
+|---|---|---|---|
+| [🔴 Live-broadcast control plane](#-live-broadcast-control-plane-real-time) | Real-time systems, E2E testing | Python asyncio, OBS, FFmpeg | Used live |
+| [🌐 ISP operations platform](#-operations-platform-for-an-internet-service-provider) | Full-stack, Postgres RLS | SvelteKit, Supabase | Production |
+| [🛫 Flight dispatch and statistics](#-flight-dispatch-and-statistics-platform-for-an-aviation-unit) | Full-stack, domain math, reporting | React, Express, TypeORM | Built |
+| [🧠 LLM agent orchestration](#-llm-agent-orchestration-framework) | Model routing, evals, guardrails | Python, Node.js, MCP | Daily use |
+| [📣 Content-operations toolkit](#-content-operations-toolkit-alpha) | Strict TypeScript, ADRs | TypeScript, Zod, SQLite | Alpha |
+| [🎬 Local-AI media pipelines](#-local-ai-media-pipelines) | Local LLM + media | Python, WhisperX, FFmpeg | Working CLI |
 
 ---
 
@@ -69,32 +78,131 @@ I build TypeScript and Python systems where timing and correctness matter: real-
 
 ---
 
-## What I can do for your team
+## What I build
 
-| Area | What I do | Tools |
-|---|---|---|
-| 🖥️ Full-stack web apps | Role-based apps with auth, complex forms, dashboards and offline-first PWAs | SvelteKit, React, TypeScript, MUI, Tailwind, Redux Toolkit |
-| 🗄️ APIs and databases | REST APIs, schema design, versioned migrations, Row Level Security, triggers, scheduled jobs | Node.js, Express, PostgreSQL, Supabase, TypeORM, Prisma, SQLite |
-| 🔐 Application security | JWT auth, role-based access, CSRF origin checks, rate limiting, input validation, threat models | Zod, Helmet, Supabase Auth |
-| ⚡ Real-time systems | WebSocket services with reconnect and state replay, per-client queues, latency compensation | Python asyncio, WebSockets, Node.js |
-| 📊 Reporting and data viz | Dashboards, server-side chart rendering into PDF reports, Excel exports | Chart.js, Recharts, pdf-lib, ExcelJS |
-| 🎬 Media and local AI | Transcription, local-LLM pipelines, video processing and automation | FFmpeg, OBS Studio, WhisperX, Ollama, OpenCV |
-| 🧪 Testing and CI | Unit, integration and E2E suites; CI across Linux, Windows and macOS | Vitest, pytest, Playwright, GitHub Actions |
-| 🤖 AI-assisted engineering | Model routing, evals, MCP tool integration, guardrail hooks | Claude Code, MCP |
+### 🔴 Live-broadcast control plane (real-time)
 
-## How I work
+[![Stack](https://skillicons.dev/icons?i=py,js,nodejs,rust,bash,powershell&theme=dark)](https://skillicons.dev)
+&nbsp;![OBS](https://img.shields.io/badge/OBS_Studio-302E31?style=flat-square&logo=obsstudio&logoColor=white)
+![FFmpeg](https://img.shields.io/badge/FFmpeg-007808?style=flat-square&logo=ffmpeg&logoColor=white)
+![Used live](https://img.shields.io/badge/Used_in-live_broadcasts-dc2626?style=flat-square)
 
-- **Ship to production, then keep it healthy.** Monitoring, audit logs and migrations are part of the feature, not an afterthought.
-- **Tests first where it matters.** E2E tests start the real server; bugs get a failing regression test before the fix.
-- **Decisions written down.** ADRs, threat models and dated security audits.
-- **Adversarial review of my own fixes.** Multi-round audits, plus a second-model review on tricky concurrency.
-- **Remote-friendly.** Async written communication, conventional commits, small reviewable changes.
+**Problem.** Run broadcast graphics (scoreboard, lineups, instant replay) for live sports from the on-site operator's phone, in sync with a video feed that arrives seconds late.
 
----
+**Evidence.** Used in live broadcasts. 100+ Playwright E2E cases across 18 specs, each starting the real relay and HTTP server, run in GitHub Actions on Windows and macOS behind a Linux lint gate. The bot has an integration harness against a fake server that speaks the real obs-websocket protocol. A written threat model ships with the code.
 
-## How I work with AI agents
+<details><summary><b>Architecture and details</b></summary>
 
-I build daily with AI coding agents and treat them as an unreliable dependency: routed, tested and gated. A router classifies each task and sends it to the right model and specialized agent, backed by a 70+ card catalog of engineering patterns.
+**Built.** A Python asyncio WebSocket relay that fans commands out to browser-source overlays and drives OBS Studio over obs-websocket v5. It keeps per-client outbox queues, replays state on reconnect, checks tokens in constant time and allowlists Origins against cross-site WebSocket hijacking. A "field mode" delays commands to match stream latency, and an FFmpeg pipeline cuts slow-motion replays. One config per event series feeds every overlay.
+
+**Stack.** Python (asyncio, websockets), vanilla JS, OBS Studio, FFmpeg, Node.js (telegraf, Telegram bot for remote OBS control), Rust (tokio, small preflight CLI), PM2, Bash + PowerShell.
+
+</details>
+
+*Diagram: the operator's phone sends authenticated WebSocket commands to a Python relay. The relay broadcasts state to browser-source overlays and controls OBS Studio over obs-websocket v5; OBS feeds replay clips to FFmpeg, and a Telegram bot also controls OBS.*
+
+```mermaid
+flowchart TD
+  phone["📱 Operator phone<br/>(control panel)"] -->|"WebSocket + token"| relay["⚡ WebSocket relay<br/>Python asyncio"]
+  relay -->|"broadcast + state replay"| overlays["🖥️ Browser-source<br/>overlays"]
+  relay -->|"obs-websocket v5"| obs["🎥 OBS Studio"]
+  obs -->|"replay buffer"| ffmpeg["🎞️ FFmpeg<br/>slow-motion clips"]
+  bot["🤖 Telegram bot<br/>Node.js"] -->|"obs-websocket v5"| obs
+  classDef core fill:#7c3aed,stroke:#c4b5fd,color:#fff
+  classDef edge fill:#1e1033,stroke:#a855f7,color:#f5d0fe
+  class relay core
+  class phone,overlays,obs,ffmpeg,bot edge
+```
+
+### 🌐 Operations platform for an internet service provider
+
+[![Stack](https://skillicons.dev/icons?i=svelte,ts,supabase,postgres,tailwind,sentry,vercel&theme=dark)](https://skillicons.dev)
+&nbsp;![PWA](https://img.shields.io/badge/Offline--first-PWA-5A0FC8?style=flat-square&logo=pwa&logoColor=white)
+![Production](https://img.shields.io/badge/Deployed-to_production-16a34a?style=flat-square)
+
+**Problem.** Manage customers, plans, payments and receivables, inventory, support tickets and field-technician work, including offline work.
+
+**Evidence.** Deployed to production for an internet service provider. 30+ RLS policies, 10 database triggers, 14 versioned migrations.
+
+<details><summary><b>Architecture and details</b></summary>
+
+**Built.** A SvelteKit app on Supabase/PostgreSQL. Row Level Security enforces data access in the database, with JWT auth (Supabase Auth) and role-based access on top. An audit log is written by a trigger and by the app, and pg_cron runs scheduled jobs. Hardening: database-persisted rate limiting, security headers, CSRF origin checks, Zod validation on endpoints and forms. Field technicians use an offline-first PWA (IndexedDB + service worker) with an interactive map.
+
+**Stack.** SvelteKit (Svelte 5), TypeScript, Supabase / PostgreSQL, Zod, Chart.js, Leaflet, Tailwind, Sentry, Vercel.
+
+</details>
+
+### 🛫 Flight dispatch and statistics platform for an aviation unit
+
+[![Stack](https://skillicons.dev/icons?i=react,ts,vite,materialui,redux,nodejs,express,postgres&theme=dark)](https://skillicons.dev)
+&nbsp;![TypeORM](https://img.shields.io/badge/TypeORM-FE0803?style=flat-square&logo=typeorm&logoColor=white)
+![Chart.js](https://img.shields.io/badge/Chart.js-FF6384?style=flat-square&logo=chartdotjs&logoColor=white)
+![JWT](https://img.shields.io/badge/JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white)
+![Aircraft](https://img.shields.io/badge/Weight_%26_balance-jet_%C2%B7_helicopter-0ea5e9?style=flat-square)
+
+**Problem.** An aviation unit that flies air-ambulance and medical-transfer missions tracked flights, maintenance and pre-flight weight-and-balance on paper and spreadsheets. Management needed reliable monthly statistics, and pilots needed a dispatch sheet they could trust before takeoff.
+
+**Evidence.** 14 TypeORM entities, 5 versioned migrations and ~50 REST endpoints behind token auth. Weight-and-balance math follows the manufacturers' loading tables, kept as typed data separate from the UI. I can walk through the code in an interview.
+
+<details><summary><b>Architecture and details</b></summary>
+
+**Built.** A React + Express platform, built in a two-person team. Pilots fill a dispatch form that computes weight, moment, center of gravity and %MAC for empty, fuel, takeoff and landing conditions, per aircraft type: a light business jet (manufacturer fuel-moment tables, 6.7 lb/gal fuel density) and a single-engine helicopter. Each balance is stored with its crew and aircraft. The rest of the app covers medical transfers (origin and destination by state, region and municipality), aircraft inspections, maintenance records, other flights and users with roles. A statistics module ranks aircraft, pilots and hospitals and filters by date range. The server renders Chart.js charts with `chartjs-node-canvas` and stamps them into official PDF templates with `pdf-lib`; ExcelJS handles exports.
+
+**Stack.** React 18, TypeScript, Vite, MUI, Redux Toolkit, Formik + Yup · Node.js, Express, TypeORM, PostgreSQL, JWT, pdf-lib, ExcelJS.
+
+</details>
+
+*Diagram: the pilot's dispatch form computes weight and balance in the browser and saves it through the Express API. The API persists to PostgreSQL via TypeORM and feeds the statistics module, which renders charts on the server into PDF reports and Excel exports.*
+
+```mermaid
+flowchart TD
+  pilot["🧑‍✈️ Pilot dispatch form<br/>React + MUI"] -->|"W&B: weight, moment, CG, %MAC"| api["⚙️ REST API<br/>Express + JWT"]
+  ops["🚑 Transfers, inspections,<br/>maintenance"] --> api
+  api -->|"TypeORM"| db[("🐘 PostgreSQL")]
+  api --> stats["📊 Statistics<br/>aircraft · pilots · hospitals"]
+  stats --> pdf["📄 PDF reports<br/>chartjs-node-canvas + pdf-lib"]
+  stats --> xls["📑 Excel export<br/>ExcelJS"]
+  classDef core fill:#0ea5e9,stroke:#bae6fd,color:#fff
+  classDef edge fill:#1e1033,stroke:#a855f7,color:#f5d0fe
+  class api core
+  class pilot,ops,db,stats,pdf,xls edge
+```
+
+### 🧠 LLM agent orchestration framework
+
+[![Stack](https://skillicons.dev/icons?i=py,nodejs,sqlite,githubactions&theme=dark)](https://skillicons.dev)
+&nbsp;![MCP](https://img.shields.io/badge/MCP-6d28d9?style=flat-square&logo=modelcontextprotocol&logoColor=white)
+![Claude](https://img.shields.io/badge/Claude_Code-D97706?style=flat-square&logo=anthropic&logoColor=white)
+![Tests](https://img.shields.io/badge/300%2B_tests-Python_%2B_Node-7c3aed?style=flat-square)
+
+**Problem.** Route engineering and research tasks to the right model, agent and tool, and keep that routing itself tested.
+
+**Evidence.** 300+ automated tests (Python + Node), golden-set routing evals and CI on Linux, Windows and macOS. A 24-branch routing tree and a 70+ card catalog of engineering patterns, each tied to its sources.
+
+<details><summary><b>Architecture and details</b></summary>
+
+**Built.** A multi-agent framework I use daily. A router classifies each task and delegates it to specialized workers, with a fan-out planner for larger jobs. Tools are reached through MCP, and episodic memory lives in SQLite with idempotent writes. An automated quality gate runs unit tests, lint, spec-conformance and documentation checks.
+
+**Stack.** Python, Node.js (zero runtime deps), SQLite, MCP.
+
+</details>
+
+*Diagram: a router sends each task to specialized workers. Workers reach tools through MCP, keep idempotent SQLite memory and are checked by a quality gate; golden-set evals test the router.*
+
+```mermaid
+flowchart TD
+  evals["🧪 Golden-set<br/>routing evals"] -.-> router["🧭 Router<br/>(classifies each task)"]
+  router --> workers["🤖 Specialized workers"]
+  workers --> tools["🔌 Tools via MCP"]
+  workers --> mem[("💾 Episodic memory<br/>SQLite, idempotent")]
+  workers --> gate["✅ Quality gate<br/>tests, lint, spec checks"]
+  classDef core fill:#db2777,stroke:#fbcfe8,color:#fff
+  classDef edge fill:#1e1033,stroke:#a855f7,color:#f5d0fe
+  class router core
+  class evals,workers,tools,mem,gate edge
+```
+
+#### Model and agent delegation
 
 | Model tier | Gets | Checked by |
 |---|---|---|
@@ -140,7 +248,50 @@ flowchart LR
 
 </details>
 
+### 📣 Content-operations toolkit (alpha)
+
+[![Stack](https://skillicons.dev/icons?i=ts,py,sqlite,vitest,nodejs&theme=dark)](https://skillicons.dev)
+&nbsp;![Status](https://img.shields.io/badge/Status-alpha-f59e0b?style=flat-square)
+![Tests](https://img.shields.io/badge/500%2B_tests-Vitest_%2B_pytest-7c3aed?style=flat-square)
+
+**Problem.** Run content for several social pages from one place, with per-page config and an approval step before anything is published.
+
+**Evidence.** 500+ automated tests (Vitest + pytest), including credential-handling and path-traversal tests. 5 written ADRs (API-first design, adapter shape, SQLite driver choice).
+
+<details><summary><b>Architecture and details</b></summary>
+
+**Built.** A TypeScript monorepo, still in development. A strict-TypeScript core with Zod-validated, inheritable per-page config, SQLite persistence with versioned migrations, platform adapters behind one interface and a content-queue state machine (draft, review, approved, published) designed around a human-only approval step. Also: a text-to-speech service with Python inference isolated behind a process watchdog, and an HTML-to-video wrapper.
+
+**Stack.** TypeScript (strict, `noUncheckedIndexedAccess`), Zod, SQLite (better-sqlite3), Vitest, Python, pytest, pnpm workspaces, FFmpeg.
+
+</details>
+
+### 🎬 Local-AI media pipelines
+
+[![Stack](https://skillicons.dev/icons?i=py&theme=dark)](https://skillicons.dev)
+&nbsp;![Ollama](https://img.shields.io/badge/Ollama-000000?style=flat-square&logo=ollama&logoColor=white)
+![FFmpeg](https://img.shields.io/badge/FFmpeg-007808?style=flat-square&logo=ffmpeg&logoColor=white)
+![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white)
+![Whisper](https://img.shields.io/badge/WhisperX-faster--whisper-0ea5e9?style=flat-square)
+
+**Problem.** Turn long live streams into short captioned clips and written summaries without sending media to a paid cloud API.
+
+**Evidence.** 50+ CLI tests, including a regression test that blocks reinstalling a media-download dependency version with a known CVE. Written security audit, all findings resolved.
+
+<details><summary><b>Architecture and details</b></summary>
+
+**Built.** A pipeline that turns long streams into short vertical clips: word-level transcription (WhisperX), local-LLM highlight detection (Ollama), a face-aware static 9:16 crop (MediaPipe) and burned-in karaoke-style captions (FFmpeg). A second CLI transcribes downloads or live streams in chunks (faster-whisper) and drafts analysis with a local LLM. I compared several local models before picking a default.
+
+**Stack.** Python, WhisperX, faster-whisper, Ollama, MediaPipe, OpenCV, FFmpeg, pytest.
+
+</details>
+
 ---
+
+## Engineering habits
+
+- Decisions written down: ADRs, threat models, dated security audits.
+- Adversarial review of my own fixes: multi-round audits, and a second-model review on race conditions.
 
 ## Currently deepening
 
@@ -163,8 +314,8 @@ flowchart LR
 
 </div>
 
-Most of my work lives in private repositories, so the contribution graph includes private activity. I'm happy to walk through architecture and code in an interview.
+Most of my day-to-day work shows up in this profile's contribution graph. I can walk through the architecture and code of any of these projects in an interview.
 
-**Open to remote roles** · Oaxaca, México (UTC-6) · Spanish (native) · <ol3rm2@gmail.com>
+Spanish (native). Email: <ol3rm2@gmail.com>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:f59e0b,40:db2777,70:c026d3,100:7c3aed&height=100&section=footer" width="100%" alt=""/>
