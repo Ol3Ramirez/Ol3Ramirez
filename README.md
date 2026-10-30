@@ -49,7 +49,7 @@ flowchart TD
 
 **Stack.** Python, Node.js (zero runtime deps), SQLite, MCP.
 
-**Evidence.** 300+ automated tests (Python + Node) and golden-set routing evals.
+**Evidence.** 300+ automated tests (Python + Node), golden-set routing evals, and CI on Linux, Windows and macOS.
 
 *Diagram: a router sends each task to specialized workers. Workers reach tools through MCP, keep idempotent SQLite memory and are checked by a quality gate; golden-set evals test the router.*
 
